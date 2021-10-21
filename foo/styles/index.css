@@ -1,0 +1,35 @@
+*{
+    transition:200ms;
+}
+.header{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    background:white;
+    border-bottom:0.3px solid rgba(0,0,0,0.2);
+    padding:1em;
+}
+.cont-btn-menu{
+    width:35px;
+    height:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:column;
+    margin-right:20px;
+    
+}
+.cont-btn-menu div{
+    width:80%;
+    height:3px;
+    background:rgba(0,40,255,0.9);
+}
+.cont-btn-menu-active div{
+    background:rgba(255,0,40,0.9);
+}
+button:hover{
+    background:rgba(0,30,245,0.9)
+}
+.viewImages{
+    display:none;
+}

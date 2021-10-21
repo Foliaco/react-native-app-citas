@@ -1,0 +1,51 @@
+[{
+    "id":1,
+    "name":"Julian Barrios",
+    "prof":"Estilista",
+    "gen":"M"
+},{
+    "id":2,
+    "name":"Andrea Garcia",
+    "prof":"Manicure",
+    "gen":"F"
+},{
+    "id":3,
+    "name":"Maria Perez",
+    "prof":"Peluqueria",
+    "gen":"F"
+},{
+    "id":4,
+    "name":"Carlos Barrios",
+    "prof":"Peluqueria",
+    "gen":"M"
+},{
+    "id":5,
+    "name":"Sofia Lopez",
+    "prof":"Pedicure",
+    "gen":"F"
+},{
+    "id":6,
+    "name":"Julian Barrios",
+    "prof":"Estilista",
+    "gen":"M"
+},{
+    "id":7,
+    "name":"Andrea Garcia",
+    "prof":"Manicure",
+    "gen":"F"
+},{
+    "id":8,
+    "name":"Maria Perez",
+    "prof":"Peluqueria",
+    "gen":"F"
+},{
+    "id":9,
+    "name":"Carlos Barrios",
+    "prof":"Peluqueria",
+    "gen":"M"
+},{
+    "id":10,
+    "name":"Sofia Lopez",
+    "prof":"Pedicure",
+    "gen":"F"
+}]
