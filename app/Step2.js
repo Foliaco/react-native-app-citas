@@ -9,7 +9,7 @@ const Step2=({route,navigation})=>{
 
     const getPage=(pos)=>{
         navigation.push('step3',{
-            service:route.params.service,
+            service:route.params,
             pos:pos
         })
     }
@@ -18,7 +18,7 @@ const Step2=({route,navigation})=>{
       <View>
           <View>
           <Header navigation={navigation} direction='citas'/>
-          <Text style={styles.title}>Donde quiere su servicio de {route.params.service}?</Text>
+          <Text style={styles.title}>Donde quiere su servicio de {route.params.type}?</Text>
           <View style={styles.content}>
                 <TouchableOpacity style={[styles.card,{backgroundColor:'rgb(50,200,255)'}]} onPress={()=>{getPage('local')}}>
                     <AiFillShop style={{color:'white',fontSize:'6em'}}/>

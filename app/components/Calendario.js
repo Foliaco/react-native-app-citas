@@ -193,7 +193,7 @@ const Calendario=({route,navigation})=>{
                                 onPress={()=>{
                                    console.log(ultimate)
                                    
-                                   navigation.push('step6',{
+                                   navigation.navigate('step6',{
                                        "time":[ultimate,route.params]
                                    })
                                    addPos();

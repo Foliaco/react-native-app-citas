@@ -1,0 +1,66 @@
+[
+    {
+        "id":1,
+        "area":"Estilista",
+        "services":[
+            {
+                "name":"Tratamiento",
+                "price":10000
+            },
+            {
+                "name":"Maquillaje",
+                "price":20000
+            }
+        ]
+    },
+    {
+        "id":2,
+        "area":"Manicure",
+        "services":[
+            {
+                "name":"Arreglo de uñas",
+                "price":7000
+            },
+            {
+                "name":"Tratamiento",
+                "price":10000
+            }
+        ]
+    },
+    {
+        "id":3,
+        "area":"Pedicure",
+        "services":[
+            { 
+                "name":"Cera",
+                "price":25000
+            },
+            {
+                "name":"Arreglo de uñas",
+                "price":14000
+            }
+        ]
+    },
+    {
+        "id":4,
+        "area":"Peluqueria",
+        "services":[
+            {
+                "name":"Blower",
+                "price":27000
+            },
+            {
+                "name":"Tinte",
+                "price":25000
+            },
+            {
+                "name":"Corte Mujer",
+                "price":20000
+            },
+            {
+                "name":"Corte Hombre",
+                "price":10000
+            }
+        ]
+    }
+]

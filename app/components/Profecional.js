@@ -5,13 +5,13 @@ import ProfeContext from '../../hooks/profecional/ProfeContex'
 import profeData from '../../data/profesionales.json';
 import PosContext from '../../hooks/position/posContext';
 const Profecional=({type,navigation,route})=>{
-
+    console.log(route,"profecional")
     const [visible, setVisible] = useState(false);
     const selectProfe=[]
     const {profe,addProfe} =useContext(ProfeContext);
     const {addPos} =  useContext(PosContext)
     profeData.forEach((e)=>{
-        if(e.prof===type){
+        if(e.prof===route.params.service.type){
             selectProfe.push(e)
         }
     })
@@ -20,7 +20,7 @@ const Profecional=({type,navigation,route})=>{
       <View>
           <View style={{width:'100%',padding:20,backgroundColor:'white'}}>
               <Text style={{fontSize:'1em',marginBottom:'10',fontWeight:'bold',color:'rgb(255,200,50)'}}>Quien te atendera?</Text>
-              <Text style={{fontSize:'0.95em',marginBottom:'10'}} ><AiOutlineUser color='rgba(255,50,200)' style={{fontSize:'1.3em',paddingRight:10}} />Profecionales en {type}</Text>
+              <Text style={{fontSize:'0.95em',marginBottom:'10'}} ><AiOutlineUser color='rgba(255,50,200)' style={{fontSize:'1.3em',paddingRight:10}} />Profecionales en {route.params.service.type}</Text>
               <Text style={{fontSize:'0.9em',marginBottom:'10'}}>Eligen quien te atendera o asignamos uno aleatoreamente</Text>
           </View>
           <View style={{justifyContent:'space-between',alignItems:'center',flexDirection:'row',paddingLeft:20,paddingRight:20}}>

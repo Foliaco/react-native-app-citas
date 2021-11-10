@@ -31,7 +31,7 @@ const Step3 = ({ route, navigation }) => {
             </View>
                 <View style={{width:'100vw'}}>
                         <View style={{width:'100vw'}}>
-                            <Profecional route={route} navigation={navigation} type={route.params.service} />
+                            <Profecional route={route} navigation={navigation} type={route.params.type} />
                         </View>
                 </View>
                <Footer navigation={navigation} pos={'fixed'}/>

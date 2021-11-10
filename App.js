@@ -24,7 +24,7 @@ const App = () => {
         <ProfeState>
         <View style={styles.content}>
           <NavigationContainer>
-            <Stack.Navigator initialRouteName="step6" screenOptions={{ headerShown: false }}>
+            <Stack.Navigator initialRouteName="home" screenOptions={{ headerShown: false }}>
               <Stack.Screen name="home" component={Home} />
               <Stack.Screen name="citas" component={Citas} />
               <Stack.Screen name='step2' component={Step2} />
