@@ -25,27 +25,27 @@
     "gen":"F"
 },{
     "id":6,
-    "name":"Julian Barrios",
+    "name":"Miguel Andres",
     "prof":"Estilista",
     "gen":"M"
 },{
     "id":7,
-    "name":"Andrea Garcia",
+    "name":"Andres Guitierez",
     "prof":"Manicure",
     "gen":"F"
 },{
     "id":8,
-    "name":"Maria Perez",
+    "name":"Pedro Perez",
     "prof":"Peluqueria",
-    "gen":"F"
+    "gen":"M"
 },{
     "id":9,
-    "name":"Carlos Barrios",
+    "name":"Pedro Barrios",
     "prof":"Peluqueria",
     "gen":"M"
 },{
     "id":10,
-    "name":"Sofia Lopez",
+    "name":"Carla Gomez",
     "prof":"Pedicure",
     "gen":"F"
 }]

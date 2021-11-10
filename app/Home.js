@@ -1,7 +1,19 @@
-import React from 'react';
+import React,{useContext,useEffect} from 'react';
 import {View,Text,TouchableOpacity,Image,StyleSheet} from 'react-native';
-const Home=({navigation})=>{
-    
+import PosContext from '../hooks/position/posContext';
+import CedesContext from '../hooks/cedes/cedesContext';
+import ProfeContext from '../hooks/profecional/ProfeContex';
+
+const Home=({navigation,route})=>{
+    const {resetPos}=useContext(PosContext)
+    const {resetCedes} = useContext(CedesContext)
+    const {resetProfe} = useContext(ProfeContext)
+    useEffect(()=>{
+        resetCedes();
+        resetPos();
+        resetProfe();
+    },[])
+    console.log(route)
     return(
       <View>
           <View style={styles.header}>

@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "cede":"Cartagena Olimpica-San Jose"
+    },
+    {
+        "id":2,
+        "cede":"Cartagena Exito-Castellana"
+    },
+    {
+        "id":3,
+        "cede":"Cartagena Exito-Centro"
+    },
+    {
+        "id":4,
+        "cede":"Cartagena Plazuela"
+    },
+    {
+        "id":5,
+        "cede":"Cartagena Chambaku"
+    },
+    {
+        "id":6,
+        "cede":"Cartagena Bocagrande"
+    },
+    {
+        "id":7,
+        "cede":"Cartagena Crespo"
+    }
+]

@@ -1,0 +1,9 @@
+<Animated.View style={{width:'100vw',minHeight:'100%',position:'absolute',left:anim.left2}}>
+                            <Profecional type={route.params.service}/>
+                        </Animated.View>
+                        <Animated.View style={{width:'100vw',minHeight:'100%',position:'absolute',left:anim.left3}}>
+                            <Calendario route={route}/>
+                        </Animated.View>
+                        <Animated.View style={{width:'100vw',minHeight:'100%',position:'absolute',left:anim.left4}}>
+                            <Text>Hola mundo</Text>
+                        </Animated.View>

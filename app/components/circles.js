@@ -1,27 +1,37 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, Modal, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, Modal, TouchableOpacity, Alert } from 'react-native';
+import {FaRegHandPaper} from 'react-icons/fa';
+import {GiBarefoot,GiHairStrands,GiSaloonDoors} from 'react-icons/gi';
 
-const Circles=({color,dec,pos,data})=>{
+const Circles=({navigation})=>{
 
     const [on, setOn] = useState(false)
 
+    const getPage=type=>{
+        navigation.push('step2',{
+            service:type
+        });
+    }
+
 
     return(
-      <View style={[styles.cont,{flexDirection:pos,borderBottomColor:color}]}>
-            <View style={[styles.circle,{backgroundColor:color}]} onPress={()=>setOn(true)}>
-            </View>
-            <View style={styles.step}>
-            <Text style={styles.text}>{dec}</Text>
-            </View>
-            <Modal visible={on}>
-                <View style={styles.modal}>
-                    {data.map((e,i)=>(
-                        <TouchableOpacity key={i} style={{backgroundColor:color,margin:'auto',marginTop:10,borderRadius:'3px'}}>
-                        <Text>{e.option}</Text>
-                        </TouchableOpacity>
-                    ))}
-                </View>
-            </Modal>
+      <View style={styles.cont}>
+          <TouchableOpacity style={[styles.label,{backgroundColor:'rgb(255,200,50)'}]} onPress={()=>getPage('Estilista')}>
+                <Text style={styles.text}>Estilistas</Text>
+                <GiSaloonDoors style={{fontSize:'1.5em'}} color='white'/>
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.label,{backgroundColor:'rgb(50,200,255)'}]} onPress={()=>getPage('Manicure')}>
+                <Text style={styles.text}>Manicure</Text>
+                <FaRegHandPaper style={{fontSize:'1.5em'}} color='white'/>
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.label,{backgroundColor:'rgb(200,255,50)'}]} onPress={()=>getPage('Pedicure')}>
+                <Text style={styles.text}>Pedicure</Text>
+                <GiBarefoot style={{fontSize:'1.5em'}} color='white'/>
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.label,{backgroundColor:'rgb(255,50,255)'}]} onPress={()=>getPage('Peluqueria')}>
+                <Text style={styles.text}>Cabello</Text>
+                <GiHairStrands style={{fontSize:'1.5em'}} color='white'/>
+          </TouchableOpacity>
       </View>
     );
 }
@@ -30,39 +40,27 @@ const styles=StyleSheet.create({
     cont:{
         width:'90%',
         padding:15,
+        justifyContent:'center',
+        alignItems:'center',
+        margin:'auto',
+        marginBottom:20,
+        marginTop:70,
+        flexDirection:'column'
+    },
+    label:{
+        width:'95%',
+        margin:'auto',
+        borderRadius:50,
         justifyContent:'space-between',
         alignItems:'center',
-        borderBottomWidth:'0.3px',
-        margin:'auto',
-        marginBottom:20
-    },
-    circle:{
-        borderRadius:'100px',
-        height:'20vw',
-        width:'20vw',
-    },
-    step:{
-        width:"50vw",
-        alignItems:'center'
+        flexDirection:'row',
+        marginBottom:30,
+        padding:15
     },
     text:{
+        color:'white',
         fontSize:'1em',
-        color:'rgba(0,0,0.8)'
-    },
-    back:{
-        width:'100vw',
-        height:'100vh',
-        backgroundColor:'rgba(0,0,0,0.2)',
-        justifyContent:'center',
-        alignItems:'center'
-    },
-    modal:{
-        justifyContent:'center',
-        alignItems:'center',
-        width:'80vw',
-        padding:30,
-        backgroundColor:'white',
-        borderRadius:'4px'
+        fontWeight:'bold'
     }
 })
 
